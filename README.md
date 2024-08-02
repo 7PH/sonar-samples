@@ -2,7 +2,7 @@
 
 Samples of projects to use with SonarSource scanner.
 
-aa
+aa bb
 
 ## Requirements
 
