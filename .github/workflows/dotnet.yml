@@ -43,6 +43,8 @@ jobs:
       - name: Build and analyze
         shell: powershell
         run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"7PH_sonar-samples" /o:"7ph" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          dotnet build
-          .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
+          "hello" | Out-File -FilePath .\.sonar\scanner\debug.txt
+
+          #.\.sonar\scanner\dotnet-sonarscanner begin /k:"7PH_sonar-samples" /o:"7ph" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
+          #dotnet build
+          #.\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
