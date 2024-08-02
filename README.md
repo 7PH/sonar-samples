@@ -2,8 +2,8 @@
 
 Samples of projects to use with SonarSource scanner.
 
-aa bb
-
+aa bb cc
+ 
 ## Requirements
 
 This setup is necessary to run Sonar scanner on the different projets.
